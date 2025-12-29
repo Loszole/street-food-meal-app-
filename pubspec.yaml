@@ -1,0 +1,44 @@
+name: recipe_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.3
+
+dependencies:
+  floor: ^1.4.1
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  flutter:
+    sdk: flutter
+  
+  carousel_slider: ^5.1.1
+  cupertino_icons: ^1.0.8
+  # Switched to the modern, maintained version of wakelock
+  wakelock_plus: ^1.2.8
+  material_design_icons_flutter: ^7.0.7296
+  tabler_icons_flutter: ^2.11.0
+  image_picker: ^1.0.7
+  # Removed duplicate floor, sqflite, path_provider
+
+dev_dependencies:
+  floor_generator: ^1.4.1
+  build_runner: ^2.4.6
+  flutter_test:
+    sdk: flutter
+
+  # Adjusted to a standard stable version
+  flutter_lints: ^4.0.0
+  # Removed duplicate floor_generator, build_runner
+
+flutter:
+  uses-material-design: true
+
+  # Ensure these files actually exist at these exact paths!
+  assets:
+    - lib/assets/logo.png
+    - lib/assets/recipe_placeholder.png
+    - lib/assets/home_cook.png
+
